@@ -45,7 +45,7 @@ end
 -- REMEMBER FOLDS (AND CURSOR LOCATION)
 local function remember(mode)
 	-- stylua: ignore
-	local ignoredFts = { "TelescopePrompt", "DressingSelect", "DressingInput", "toggleterm", "gitcommit", "replacer", "harpoon", "help", "qf" }
+	local ignoredFts = { "TelescopePrompt", "DressingSelect", "DressingInput", "toggleterm", "gitcommit", "replacer", "harpoon", "help", "qf", "NvimTree" }
 	if vim.tbl_contains(ignoredFts, bo.filetype) or bo.buftype ~= "" or not bo.modifiable then return end
 	if mode == "save" then
 		cmd.mkview(1)
